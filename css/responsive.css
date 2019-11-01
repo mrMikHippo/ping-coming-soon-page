@@ -1,4 +1,4 @@
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 600px) {
   .title {
     font-size: 2rem;
   }
@@ -8,6 +8,7 @@
   .notify-me-form {
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-between;
   }
 
   .email-input {
@@ -15,9 +16,8 @@
   }
 
   .email-btn {
-    flex-basis: 39%;
+    flex-basis: 38%;
     margin-top: 0;
-    margin-left: 1%;
   }
 
   .error-message {
