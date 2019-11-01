@@ -102,6 +102,16 @@ header {
   background-color: hsl(223, 87%, 73%);
 }
 
+.error {
+  border: 1px solid hsl(354, 100%, 66%);
+}
+
+.error-message {
+  font-size: 0.8rem;
+  padding-top: 5px;
+  color: hsl(354, 100%, 66%);
+}
+
 /* Footer Section */
 footer {
   font-size: 1rem;
