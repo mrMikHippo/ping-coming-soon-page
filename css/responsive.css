@@ -1,0 +1,21 @@
+@media screen and (min-width: 500px) {
+  .title {
+    font-size: 2rem;
+  }
+  .description {
+    font-size: 1rem;
+  }
+  .notify-me-form {
+    flex-direction: row;
+  }
+
+  .email-input {
+    flex: 2;
+  }
+
+  .email-btn {
+    flex: 1;
+    margin-top: 0;
+    margin-left: 10px;
+  }
+}

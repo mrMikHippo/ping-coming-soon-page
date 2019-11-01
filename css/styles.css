@@ -8,7 +8,7 @@ html {
 
 body {
   margin: 0;
-  padding: 5%;
+  padding: 5% 5% 1%;
   text-align: center;
   font-family: 'Libre Franklin', sans-serif;
   font-weight: 300;
@@ -27,6 +27,11 @@ ul {
 
 a {
   text-decoration: none;
+}
+
+main {
+  max-width: 50rem;
+  margin: 0 auto;
 }
 
 .grey-text {
@@ -58,13 +63,17 @@ header {
 
 .email-input, .email-btn {
   padding: 1rem 2rem;
-  border: 1px solid hsl(223, 100%, 88%);
   border-radius: 3rem;
+  font-size: 1rem;
+  border: none;
+}
+
+.email-input {
+  border: 1px solid hsl(223, 100%, 88%);
 }
 
 .email-input:focus, .email-btn:focus {
   outline-style: none;
-
 }
 
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
@@ -82,11 +91,10 @@ header {
 
 .email-btn {
   margin-top: 10px;
-  color: white;
-  font-size: 0.7rem;
+  color: #eee;
   font-weight: 600;
   background-color: hsl(223, 87%, 63%);
-  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+  box-shadow: 0 3px 10px rgba(0,0,0,0.3);
   transition: ease-in-out .3s;
 }
 
