@@ -9,25 +9,32 @@
 
   <title>Frontend Mentor | Ping coming soon page</title>
 
+  <link href="https://fonts.googleapis.com/css?family=Libre+Franklin:300,600,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
   <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
 
   <header>
-    <svg width="86" height="26" xmlns="http://www.w3.org/2000/svg">
-      <text transform="translate(-677 -86)" fill="none" fill-rule="evenodd" font-family="LibreFranklin-Bold, Libre Franklin" font-size="32" font-weight="bold">
-        <tspan x="675" y="111" fill="#15202A">PING</tspan>
-        <tspan x="756.312" y="111" fill="#4C7BF3">.</tspan>
-      </text></svg>
+    <a href="#" title="brand">
+      <svg width="86" height="26" xmlns="http://www.w3.org/2000/svg">
+        <text transform="translate(-677 -86)" fill="none" fill-rule="evenodd" font-family="LibreFranklin-Bold, Libre Franklin" font-size="32" font-weight="bold">
+          <tspan x="675" y="111" fill="#15202A">PING</tspan>
+          <tspan x="756.312" y="111" fill="#4C7BF3">.</tspan>
+        </text>
+      </svg>
+    </a>
+
   </header>
 
   <main>
-    <h1 class="title">We are launching soon!</h1>
+    <h1 class="title"><span class="grey-text">We are launching</span> soon!</h1>
     <p class="description">Subscribe and get notified</p>
 
-    <form>
-      <input class="email-type" type="text" name="" placeholder="Your email address..">
+    <form class="notify-me-form">
+      <input class="email-input" type="text" name="" placeholder="Your email address..">
       <button class="email-btn" type="button" name="button">Notify Me</button>
     </form>
 
@@ -38,17 +45,22 @@
   </main>
 
   <footer>
-      <ul class="social-links">
-        <li><a href="#" title="facebook" class="fa fa-"></a></li>
-        <li><a href="#" title="twitter" class="fa fa-"></a></li>
-        <li><a href="#" title="instagram" class="fa fa-"></a></li>
-      </ul>
+    <ul class="social-links">
+      <li class="link"><a href="#" title="facebook" class="fa fa-facebook"></a></li>
+      <li class="link"><a href="#" title="twitter" class="fa fa-twitter"></a></li>
+      <li class="link"><a href="#" title="instagram" class="fa fa-instagram"></a></li>
+    </ul>
 
-      <p class="attribution">
-        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-        Coded by <a href="#">mrMikHippo</a>.
+    <div class="attribution grey-text">
+      <p>
+        <span>Challenge by</span> <span><a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.</span>
       </p>
-      <p class="copyright">&copy; Copyright Ping. All rights reserved.</p>
+      <p>
+        <span>Coded by</span> <span><a href="https://github.com/mrMikHippo" target="_blank">mrMikHippo</a>.</span>
+      </p>
+    </div>
+
+    <p class="copyright grey-text">&copy; Copyright Ping. All rights reserved.</p>
   </footer>
 </body>
 

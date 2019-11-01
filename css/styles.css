@@ -1,0 +1,157 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 5%;
+  text-align: center;
+  font-family: 'Libre Franklin', sans-serif;
+  font-weight: 300;
+  line-height: 1.2;
+  font-size: 20px;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.grey-text {
+  color: hsl(0, 0%, 59%);
+  font-weight: 300;
+}
+
+/* Header Section */
+header {
+  margin: 50px auto;
+}
+
+/* Main Section: ; */
+
+.title {
+  font-size: 1.5rem;
+}
+
+.description {
+  font-size: .8rem;
+}
+
+.notify-me-form {
+  margin: 50px 7%;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.email-input, .email-btn {
+  padding: 1rem 2rem;
+  border: 1px solid hsl(223, 100%, 88%);
+  border-radius: 3rem;
+}
+
+.email-input:focus, .email-btn:focus {
+  outline-style: none;
+
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  opacity: .4;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  opacity: .4;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  filter: alpha(opacity=40); /* IE8 and lower */
+  zoom: 1; /* Triggers "hasLayout" in IE 7 and lower */
+}
+
+.email-btn {
+  margin-top: 10px;
+  color: white;
+  font-size: 0.7rem;
+  font-weight: 600;
+  background-color: hsl(223, 87%, 63%);
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+  transition: ease-in-out .3s;
+}
+
+.email-btn:hover {
+  background-color: hsl(223, 87%, 73%);
+}
+
+/* Footer Section */
+footer {
+  font-size: 1rem;
+}
+.social-links {
+  margin-top: 10%;
+}
+
+.link {
+  display: inline-block;
+}
+
+.fa {
+  padding: .5rem;
+  /* font-size: 1rem; */
+  width: 1rem;
+  height: 1rem;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+  box-sizing: content-box;
+  border: 1px solid hsl(0, 0%, 90%);
+  color: hsl(223, 87%, 63%);
+  transition: ease .5s;
+}
+
+.fa:hover {
+  color: white;
+  background-color: hsl(223, 87%, 63%);
+  border-color: hsl(223, 87%, 63%);
+}
+
+.attribution p {
+  margin: 0;
+  padding: 0;
+  font-size: 0.8rem;
+  display: flex;
+}
+
+.attribution p span {
+  flex: 1;
+}
+.attribution p span:first-of-type {
+  text-align: right;
+  padding-right: 5px;
+}
+
+.attribution p span:last-of-type {
+  text-align: left;
+  padding-right: 5px;
+}
+
+.attribution a  {
+  color: hsl(223, 87%, 73%);
+  transition: ease .5s;
+}
+
+.attribution a:hover {
+  color: hsl(223, 87%, 63%)
+}
