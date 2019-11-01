@@ -1,34 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+
   <title>Frontend Mentor | Ping coming soon page</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
 
-  We are launching soon!
+  <header>
+    <svg width="86" height="26" xmlns="http://www.w3.org/2000/svg">
+      <text transform="translate(-677 -86)" fill="none" fill-rule="evenodd" font-family="LibreFranklin-Bold, Libre Franklin" font-size="32" font-weight="bold">
+        <tspan x="675" y="111" fill="#15202A">PING</tspan>
+        <tspan x="756.312" y="111" fill="#4C7BF3">.</tspan>
+      </text></svg>
+  </header>
 
-  Subscribe and get notified
+  <main>
+    <h1 class="title">We are launching soon!</h1>
+    <p class="description">Subscribe and get notified</p>
 
-  Notify Me
+    <form>
+      <input class="email-type" type="text" name="" placeholder="Your email address..">
+      <button class="email-btn" type="button" name="button">Notify Me</button>
+    </form>
 
-  &copy; Copyright Ping. All rights reserved.
+    <div class="dashboard-section">
+      <img src="images/illustration-dashboard.png" alt="">
+    </div>
+
+  </main>
 
   <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
+      <ul class="social-links">
+        <li><a href="#" title="facebook" class="fa fa-"></a></li>
+        <li><a href="#" title="twitter" class="fa fa-"></a></li>
+        <li><a href="#" title="instagram" class="fa fa-"></a></li>
+      </ul>
+
+      <p class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="#">mrMikHippo</a>.
+      </p>
+      <p class="copyright">&copy; Copyright Ping. All rights reserved.</p>
   </footer>
 </body>
+
 </html>
