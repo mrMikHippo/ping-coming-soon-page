@@ -66,7 +66,6 @@ var cleanInput = function(field) {
 
 // Listen submit event
 document.querySelector("form").addEventListener("submit", function(event) {
-
   // Check for all items
   for (var i = 0; i < event.target.length; i++) {
     if (event.target[i].type == "email") {
@@ -75,8 +74,11 @@ document.querySelector("form").addEventListener("submit", function(event) {
 
       if (error) {
         showError(event.target[i], error);
+        event.preventDefault();
         return;
       }
+
+      console.log("No error");
 
       // Otherwise, remove existing error message
       removeError(event.target[i]);
