@@ -1,21 +1,17 @@
 var hasError = function(field) {
-  console.log("Check field: " + field.type);
-
   // Get validity
   var validity = field.validity;
-  console.log(validity);
 
   // If valid, return null
   if (validity.valid) return;
 
-  if (validity.typeMismatch) return 'Please provide a valid email address';
+  if (validity.patternMismatch) return 'Please provide a valid email address';
 
   // If all else fails, return a generic catchall error
   return 'The value you entered for this field is invalid.';
 };
 
 var showError = function(field, error) {
-  console.log("Show error");
   // Add error class to field
   field.classList.add("error");
 
@@ -27,11 +23,13 @@ var showError = function(field, error) {
   // If not, create one
   var message = field.form.querySelector(".error-message");
   if (!message) {
-    console.log("No message field");
     message = document.createElement('div');
     message.classList.add('error-message');
     field.parentNode.insertBefore(message, field.nextSibling);
   }
+
+  // Add ARIA role to the field
+  field.setAttribute('aria-describedby', 'email-input-error');
 
   // Update error message
   message.innerHTML = error;
@@ -45,10 +43,11 @@ var showError = function(field, error) {
 
 // Remove the error message
 var removeError = function(field) {
-
-  console.log("removeError");
   // Remove error class to field
   field.classList.remove('error');
+
+  // Remove ARIA role from the field
+   field.removeAttribute('aria-describedby');
 
   // Check if an error message in DOM
   var message = field.form.querySelector(".error-message");
@@ -73,8 +72,6 @@ document.querySelector("form").addEventListener("submit", function(event) {
     if (event.target[i].type == "email") {
       // Validate the field
       var error = hasError(event.target[i]);
-
-      console.log(event);
 
       if (error) {
         showError(event.target[i], error);
